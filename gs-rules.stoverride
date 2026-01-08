@@ -1,4 +1,3 @@
-#SUBSCRIBED https://raw.githubusercontent.com/qiudxx/stash-rule/refs/heads/main/gs-rules.stoverride
 #!desc= 公司内部规则
 name: gs-rules
 desc: 公司内部规则
@@ -8,3 +7,4 @@ dns:
 
 rules:
   - DOMAIN,neu3001015.mysql.database.azure.com,DIRECT
+  - DOMAIN-SUFFIX,xiaohongshu.com,PROXY
