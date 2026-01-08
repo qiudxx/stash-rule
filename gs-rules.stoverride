@@ -1,0 +1,10 @@
+#SUBSCRIBED https://raw.githubusercontent.com/qiudxx/stash-rule/refs/heads/main/gs-rules.stoverride
+#!desc= 公司内部规则
+name: gs-rules
+desc: 公司内部规则
+dns:
+  nameserver-policy:
+    "*.greatstartools.com": 192.168.100.202
+
+rules:
+  - DOMAIN,neu3001015.mysql.database.azure.com,DIRECT
