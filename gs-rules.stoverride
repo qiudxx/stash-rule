@@ -9,3 +9,10 @@ rules:
   - DOMAIN,neu3001015.mysql.database.azure.com,DIRECT
   - DOMAIN-SUFFIX,xiaohongshu.com,PROXY
   - DOMAIN-SUFFIX,xhscdn.com,PROXY
+  - DOMAIN-SUFFIX,lista.com,PROXY
+  - IP-CIDR,135.236.238.59/32,DIRECT  #智能家居app5
+  - IP-CIDR,47.88.0.43/32,DIRECT   #品牌部
+  - IP-CIDR,47.251.76.183/32,DIRECT   #美国硅谷服务器
+  - IP-CIDR,40.80.149.81/32,DIRECT   #智能家居app1
+  - IP-CIDR,137.117.53.86/32,DIRECT  #智能家居数据库
+
