@@ -8,3 +8,4 @@ dns:
 rules:
   - DOMAIN,neu3001015.mysql.database.azure.com,DIRECT
   - DOMAIN-SUFFIX,xiaohongshu.com,PROXY
+  - DOMAIN-SUFFIX,xhscdn.com,PROXY
