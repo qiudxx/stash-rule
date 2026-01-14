@@ -1,0 +1,21 @@
+payload:
+  # --- 核心服务 ---
+  - DOMAIN-SUFFIX,gemini.google.com
+  - DOMAIN-SUFFIX,bard.google.com
+  - DOMAIN,ai.google.dev
+  - DOMAIN-SUFFIX,aistudio.google.com
+
+  # --- 必须强制走同一节点的关联服务 ---
+  # 鉴权与API（最容易导致IP跳变的元凶）
+  - DOMAIN-SUFFIX,googleapis.com
+  - DOMAIN-SUFFIX,apis.google.com
+  - DOMAIN-SUFFIX,accounts.google.com
+  - DOMAIN-SUFFIX,accounts.youtube.com
+
+  # 资源与内容
+  - DOMAIN-SUFFIX,gstatic.com
+  - DOMAIN-SUFFIX,googleusercontent.com
+
+  # 其他关键词
+  - DOMAIN-KEYWORD,colab
+  - DOMAIN-KEYWORD,generativelanguage
