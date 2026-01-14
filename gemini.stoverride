@@ -6,7 +6,7 @@ desc: gemini规则
 #美国节点代理
 proxy-groups:
   - name: USA
-    type: selet
+    type: select
     include-all: true
     filter: '美' 
 rule-providers:
