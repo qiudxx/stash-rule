@@ -1,0 +1,21 @@
+#!desc= gemini规则
+name: gemini-rules
+desc: gemini规则
+
+
+#美国节点代理
+proxy-groups:
+  - name: USA
+    type: url-test
+    include-all: true
+    filter: '美' 
+rule-providers:
+  gemini:
+    behavior: classical
+    format: yaml
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Gemini/Gemini.yaml"
+    interval: 864000
+
+rules:
+  - RULE-SET,gemini,USA
+
