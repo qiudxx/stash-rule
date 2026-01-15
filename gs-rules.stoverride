@@ -3,7 +3,7 @@ name: gs-rules
 desc: 公司内部规则
 dns:
   nameserver-policy:
-    "*.greatstartools.com": 192.168.100.202
+    "*.greatstartools.com": 192.168.100.201
 
 rules:
   - DOMAIN,neu3001015.mysql.database.azure.com,DIRECT
