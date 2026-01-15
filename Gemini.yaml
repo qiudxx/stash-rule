@@ -22,10 +22,10 @@ payload:
   - DOMAIN-SUFFIX,ytimg.com
 
   # --- 官方防火墙推荐列表补充 (Web/App 依赖) ---
-  # - DOMAIN,www.google.com
-  # - DOMAIN,ogs.google.com
-  # - DOMAIN,play.google.com
-  # - DOMAIN,lh3.google.com
+  - DOMAIN,www.google.com
+  - DOMAIN,ogs.google.com
+  - DOMAIN,play.google.com
+  - DOMAIN,lh3.google.com
   - DOMAIN-SUFFIX,clients6.google.com
   - DOMAIN-SUFFIX,youtube.com
   - DOMAIN-SUFFIX,withgoogle.com
