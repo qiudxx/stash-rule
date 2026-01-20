@@ -1,0 +1,50 @@
+#!desc= gemini规则
+name: gemini-rules
+desc: gemini规则
+
+
+#美国节点代理
+proxy-groups:
+  - name: USA
+    type: select
+    include-all: true
+    filter: '美' 
+
+rules:
+  - DOMAIN-SUFFIX,gemini.google.com,USA
+  - DOMAIN-SUFFIX,bard.google.com,USA
+  - DOMAIN,ai.google.dev,USA
+  - DOMAIN-SUFFIX,aistudio.google.com,USA
+  - DOMAIN-SUFFIX,deepmind.com,USA
+  - DOMAIN-SUFFIX,deepmind.google,USA
+
+  # --- 鉴权与 API (必须与核心入口走同一节点) ---
+  - DOMAIN-SUFFIX,googleapis.com,USA
+  - DOMAIN-SUFFIX,apis.google.com,USA
+  - DOMAIN-SUFFIX,accounts.google.com,USA
+  - DOMAIN-SUFFIX,accounts.youtube.com,USA
+  - DOMAIN-SUFFIX,googletagmanager.com,USA
+  - DOMAIN-SUFFIX,google-analytics.com,USA
+
+  # --- 内容分发 (建议包含，防止静态资源加载导致的 IP 泄漏) ---
+  - DOMAIN-SUFFIX,gstatic.com,USA
+  - DOMAIN-SUFFIX,googleusercontent.com,USA
+  - DOMAIN-SUFFIX,ggpht.com,USA
+  - DOMAIN-SUFFIX,ytimg.com,USA
+
+  # --- 官方防火墙推荐列表补充 (Web/App 依赖) ---
+  - DOMAIN,www.google.com,USA
+  - DOMAIN,ogs.google.com,USA
+  - DOMAIN,play.google.com,USA
+  - DOMAIN,lh3.google.com,USA
+  - DOMAIN-SUFFIX,clients6.google.com,USA
+  - DOMAIN-SUFFIX,youtube.com,USA
+  - DOMAIN-SUFFIX,withgoogle.com,USA
+  - DOMAIN-SUFFIX,doubleclick.net,USA
+
+  # --- 关键词匹配 (兜底) ---
+  - DOMAIN-KEYWORD,colab,USA
+  - DOMAIN-KEYWORD,generativelanguage,USA
+  - DOMAIN-KEYWORD,paalm,USA
+
+
